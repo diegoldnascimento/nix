@@ -1,7 +1,7 @@
 # Justfile
 
 # Dynamically get the hostname using shell command substitution
-hostname := `hostname`
+hostname := "diego"
 
 ############################################################################
 #
