@@ -12,7 +12,8 @@ hostname := `hostname`
 # Build and switch for Darwin
 darwin:
   nix build .#darwinConfigurations.{{hostname}}.system \
-    --extra-experimental-features 'nix-command flakes'
+    --extra-experimental-features 'nix-command flakes' --accept-flake-config --allow-unsafe-native-code-during-evaluation
+
   ./result/sw/bin/darwin-rebuild switch --flake .#{{hostname}}
 
 # Debug build and switch for Darwin

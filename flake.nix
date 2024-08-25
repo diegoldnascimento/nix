@@ -11,8 +11,6 @@
   # the nixConfig here only affects the flake itself, not the system configuration!
   nixConfig = {
     substituters = [
-      # Query the mirror of USTC first, and then the official cache.
-      "https://mirrors.ustc.edu.cn/nix-channels/store"
       "https://cache.nixos.org"
     ];
   };
@@ -50,11 +48,15 @@
     home-manager,
     ...
   }: let
-    # TODO replace with your own username, email, system, and hostname
-    username = "__USERNAME__";
-    useremail = "__USEREMAIL__";
-    system = "__SYSTEM__"; # aarch64-darwin or x86_64-darwin
-    hostname = "__HOSTNAME__";
+    username = "diego";
+    useremail = "diego.lopes.2402@gmail.com";
+
+   # Correct use of builtins.exec: Provide a list of command and arguments
+    hostnameRaw  = builtins.exec [ "hostname" "-s" ];
+    hostname = "Diegos-MacBook-Pro";
+
+    # Fetch the system architecture dynamically from the shell
+    system = builtins.exec [ "uname" "-m" ] + "-darwin";
 
     specialArgs =
       inputs
