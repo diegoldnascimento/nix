@@ -18,10 +18,24 @@
   #
   # Related Discussion: https://discourse.nixos.org/t/darwin-again/29331
   environment.systemPackages = with pkgs; [
+    lazygit
     neovim
     git
     just # use Justfile to simplify nix-darwin's commands 
+    lsd
+    fira-code-nerdfont
+    fzf
+    zsh
+    zsh-z
+    zsh-vi-mode
+    zsh-syntax-highlighting
+    ripgrep
+    go
+    gopls
+    gotools
+    ripgrep
   ];
+
   environment.variables.EDITOR = "nvim";
 
   # TODO To make this work, homebrew need to be installed manually, see https://brew.sh
@@ -70,6 +84,7 @@
     casks = [
       "stats" # beautiful system monitor
       "insomnia" # REST client
+      "nikitabobko/tap/aerospace"
     ];
   };
 }
