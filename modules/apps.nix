@@ -68,13 +68,7 @@
 
     # `brew install --cask`
     casks = [
-      "telegram"
-      "discord"
-      "raycast" # (HotKey: alt/option + space)search, caculate and run scripts(with many plugins)
       "stats" # beautiful system monitor
-      "eudic" # 欧路词典
-
-      # Development
       "insomnia" # REST client
     ];
   };
