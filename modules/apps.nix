@@ -34,6 +34,10 @@
     gopls
     gotools
     ripgrep
+    pnpm
+    _1password-gui
+    discord
+    nodejs_22
   ];
 
   environment.variables.EDITOR = "nvim";
