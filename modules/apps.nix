@@ -38,6 +38,7 @@
     _1password-gui
     discord
     nodejs_22
+    # slack
   ];
 
   environment.variables.EDITOR = "nvim";
@@ -89,6 +90,7 @@
       "stats" # beautiful system monitor
       "insomnia" # REST client
       "nikitabobko/tap/aerospace"
+      "slack"
     ];
   };
 }
