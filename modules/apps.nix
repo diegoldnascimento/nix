@@ -38,6 +38,7 @@
     _1password-gui
     discord
     nodejs_22
+    k6
     # slack
   ];
 
