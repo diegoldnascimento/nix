@@ -42,6 +42,10 @@
     python3
     python3Packages.virtualEnv
     docker
+    docker-compose
+    lazydocker
+    grafana
+    prometheus
     # slack
   ];
 
