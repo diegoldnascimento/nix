@@ -40,7 +40,6 @@
     nodejs_22
     k6
     python3
-    python3Packages.virtualEnv
     docker
     docker-compose
     lazydocker
