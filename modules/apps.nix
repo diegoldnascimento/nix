@@ -23,6 +23,7 @@
     git
     just # use Justfile to simplify nix-darwin's commands 
     lsd
+    fd 
     fira-code-nerdfont
     fzf
     zsh
