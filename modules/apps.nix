@@ -1,4 +1,5 @@
-{ pkgs, ... }: {
+{ pkgs, ... }:
+{
 
   ##########################################################################
   # 
@@ -21,9 +22,9 @@
     lazygit
     neovim
     git
-    just # use Justfile to simplify nix-darwin's commands 
+    just # use Justfile to simplify nix-darwin's commands
     lsd
-    fd 
+    fd
     fira-code-nerdfont
     fzf
     zsh
@@ -34,6 +35,12 @@
     go
     gopls
     gotools
+    gofumpt
+    php83Packages.php-cs-fixer
+    phpunit
+    php83
+    tenv
+    nixfmt-rfc-style
     ripgrep
     pnpm
     _1password-gui
@@ -80,9 +87,7 @@
       # QQMusic = 595615424;
     };
 
-    taps = [
-      "homebrew/services"
-    ];
+    taps = [ "homebrew/services" ];
 
     # `brew install`
     # TODO Feel free to add your favorite apps here.
