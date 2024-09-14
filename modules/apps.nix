@@ -33,6 +33,7 @@
     zsh-syntax-highlighting
     ripgrep
     go
+    gotest
     gopls
     gotools
     gofumpt
@@ -48,6 +49,7 @@
     nodejs_22
     k6
     python3
+    python312Packages.pytest
     docker
     docker-compose
     lazydocker
