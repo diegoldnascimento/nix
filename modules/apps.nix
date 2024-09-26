@@ -57,6 +57,7 @@
     lazydocker
     grafana
     prometheus
+    ollama
     # slack
   ];
 
