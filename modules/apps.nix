@@ -43,6 +43,7 @@
     phpunit
     php83
     tenv
+    obsidian 
     nixfmt-rfc-style
     ripgrep
     pnpm
@@ -101,6 +102,7 @@
       "curl" # no not install curl via nixpkgs, it's not working well on macOS!
       "aria2" # download tool
       "httpie" # http client
+      "ollama"
     ];
 
     # `brew install --cask`
