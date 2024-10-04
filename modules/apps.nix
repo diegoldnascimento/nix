@@ -103,6 +103,7 @@
       "aria2" # download tool
       "httpie" # http client
       "ollama"
+      "obsidian"
     ];
 
     # `brew install --cask`
