@@ -20,8 +20,9 @@
   # Related Discussion: https://discourse.nixos.org/t/darwin-again/29331
   environment.systemPackages = with pkgs; [
     nix
-    bun 
-    yazi 
+    bun
+    yt-dlp
+    yazi
     lazygit
     neovim
     git
@@ -44,7 +45,7 @@
     phpunit
     php83
     tenv
-    obsidian 
+    obsidian
     nixfmt-rfc-style
     ripgrep
     pnpm
