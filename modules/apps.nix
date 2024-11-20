@@ -61,6 +61,7 @@
     grafana
     prometheus
     ollama
+    fastfetch 
     # slack
   ];
 
